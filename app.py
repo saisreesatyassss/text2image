@@ -7,6 +7,7 @@ import io
 
 
 API_URLS = {
+        "Segmind Vega": "https://api-inference.huggingface.co/models/segmind/Segmind-Vega",
     "Stable Diffusion": "https://api-inference.huggingface.co/models/CompVis/stable-diffusion-v1-4",
     "Stable Diffusion XL": "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0",
     "Stable Diffusion V1-5": "https://api-inference.huggingface.co/models/runwayml/stable-diffusion-v1-5",
@@ -18,7 +19,7 @@ API_URLS = {
     # "IP Adapter": "https://api-inference.huggingface.co/models/h94/IP-Adapter",
     # "DALLE 3 XL": "https://api-inference.huggingface.co/models/openskyml/dalle-3-xl",
     # "Animagine XL 2.0": "https://api-inference.huggingface.co/models/Linaqruf/animagine-xl-2.0",
-    "Segmind Vega": "https://api-inference.huggingface.co/models/segmind/Segmind-Vega",
+    # "Segmind Vega": "https://api-inference.huggingface.co/models/segmind/Segmind-Vega",
     # "OrangeMixs": "https://api-inference.huggingface.co/models/WarriorMama777/OrangeMixs",
     # "Lora": "https://api-inference.huggingface.co/models/JujoHotaru/lora", 
 
@@ -44,7 +45,7 @@ selected_api = st.selectbox("Select API URL", list(API_URLS.keys()))
 API_URL = API_URLS[selected_api]
 
 # User input prompt
-user_input = st.text_input("Enter a prompt:", "Astronaut riding a horse")
+user_input = st.text_input("Enter a prompt:", "Astronaut riding a horse moon ")
 
 # Generate image button
 if st.button("Generate Image"):
